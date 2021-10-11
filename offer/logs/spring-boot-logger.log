@@ -1,0 +1,967 @@
+2021-10-11 11:39:05,536 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ed5e17f: startup date [Mon Oct 11 11:39:05 IST 2021]; root of context hierarchy
+2021-10-11 11:39:05,989 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$865a415a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:39:06,719 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-11 11:39:06,755 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22bafce8: startup date [Mon Oct 11 11:39:06 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@ed5e17f
+2021-10-11 11:39:07,897 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:39:07,899 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:39:07,978 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2021-10-11 11:39:08,237 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=56990123-f0d9-3063-929e-2af6514275d7
+2021-10-11 11:39:08,412 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a403e5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:39:08,496 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$865a415a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:39:09,284 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2021-10-11 11:39:09,314 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:39:09,331 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-11 11:39:09,331 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-11 11:39:09,349 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_301/bin/server;C:/Program Files/Java/jre1.8.0_301/bin;C:/Program Files/Java/jre1.8.0_301/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\ArcSoft\Bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;E:\Softwares\spring-tool-suite-3.8.4.RELEASE-e4.6.3-win32-x86_64\sts-bundle\sts-3.8.4.RELEASE;;.]
+2021-10-11 11:39:09,615 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2021-10-11 11:39:09,616 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 2861 ms
+2021-10-11 11:39:09,915 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2021-10-11 11:39:09,918 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet webServlet mapped to [/h2-console/*]
+2021-10-11 11:39:09,921 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-11 11:39:09,922 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-11 11:39:09,923 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-11 11:39:09,923 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-11 11:39:10,014 INFO org.springframework.aop.framework.CglibAopProxy [restartedMain] Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2021-10-11 11:39:10,377 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-11 11:39:10,744 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-11 11:39:10,850 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:39:10,955 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-11 11:39:11,184 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.2.17.Final}
+2021-10-11 11:39:11,187 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-10-11 11:39:11,276 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-10-11 11:39:11,527 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-11 11:39:12,188 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.studentoffer.offer.entity.Offer (class must be instantiated by Interceptor)
+2021-10-11 11:39:12,474 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:39:12,944 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-10-11 11:39:12,952 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:39:12,952 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:39:12,963 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:39:12,964 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:39:13,231 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:39:13,686 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22bafce8: startup date [Mon Oct 11 11:39:06 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@ed5e17f
+2021-10-11 11:39:13,768 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-11 11:39:13,900 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/offer/{state}],methods=[GET]}" onto public java.lang.String com.studentoffer.offer.controller.OfferController.getOfferByState(java.lang.String)
+2021-10-11 11:39:13,906 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-11 11:39:13,907 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-11 11:39:14,005 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:39:14,006 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:39:14,550 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-11 11:39:15,178 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2021-10-11 11:39:15,180 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-10-11 11:39:15,190 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'refreshScope' has been autodetected for JMX exposure
+2021-10-11 11:39:15,192 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2021-10-11 11:39:15,193 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'environmentManager' has been autodetected for JMX exposure
+2021-10-11 11:39:15,197 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2021-10-11 11:39:15,213 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2021-10-11 11:39:15,225 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=22bafce8,type=ConfigurationPropertiesRebinder]
+2021-10-11 11:39:15,233 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-10-11 11:39:15,253 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:39:15,593 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2021-10-11 11:39:15,625 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2021-10-11 11:39:15,633 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OfferApplication in 11.711 seconds (JVM running for 13.086)
+2021-10-11 11:43:17,873 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-10] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-10-11 11:43:17,873 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-10] FrameworkServlet 'dispatcherServlet': initialization started
+2021-10-11 11:43:18,042 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-10] FrameworkServlet 'dispatcherServlet': initialization completed in 168 ms
+2021-10-11 11:44:45,201 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9191-exec-7] SQL Error: 1054, SQLState: 42S22
+2021-10-11 11:44:45,202 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9191-exec-7] Unknown column 'offer' in 'field list'
+2021-10-11 11:44:45,218 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'offer' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1966)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:60)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2168)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1931)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1893)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:938)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:341)
+	at org.hibernate.loader.Loader.doList(Loader.java:2692)
+	at org.hibernate.loader.Loader.doList(Loader.java:2675)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2507)
+	at org.hibernate.loader.Loader.list(Loader.java:2502)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:335)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2200)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1016)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:152)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1414)
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1463)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:214)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:91)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:136)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:125)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:590)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy99.getOfferByState(Unknown Source)
+	at com.studentoffer.offer.service.OfferService.getOfferByState(OfferService.java:18)
+	at com.studentoffer.offer.controller.OfferController.getOfferByState(OfferController.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-10-11 11:45:55,278 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(14)-127.0.0.1] Application shutdown requested.
+2021-10-11 11:45:55,278 INFO org.springframework.context.support.AbstractApplicationContext [RMI TCP Connection(14)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22bafce8: startup date [Mon Oct 11 11:39:06 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@ed5e17f
+2021-10-11 11:45:55,284 INFO org.springframework.jmx.export.MBeanExporter [RMI TCP Connection(14)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2021-10-11 11:45:55,286 INFO org.springframework.jmx.support.MBeanRegistrationSupport [RMI TCP Connection(14)-127.0.0.1] Unregistering JMX-exposed beans
+2021-10-11 11:45:55,291 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(14)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:45:55,294 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(14)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-10-11 11:45:55,306 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(14)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-10-11 11:45:55,307 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Pausing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:45:55,675 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Stopping service [Tomcat]
+2021-10-11 11:45:55,681 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-2] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-10-11 11:45:55,690 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Stopping ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:45:55,696 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Destroying ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:46:12,038 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@56d96498: startup date [Mon Oct 11 11:46:12 IST 2021]; root of context hierarchy
+2021-10-11 11:46:12,947 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$700d517b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:46:15,585 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-11 11:46:15,744 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@28abcdf9: startup date [Mon Oct 11 11:46:15 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@56d96498
+2021-10-11 11:46:17,654 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:46:17,657 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:46:17,900 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2021-10-11 11:46:18,554 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=56990123-f0d9-3063-929e-2af6514275d7
+2021-10-11 11:46:19,012 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53f34e7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:46:19,198 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$700d517b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:46:21,661 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2021-10-11 11:46:21,699 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:46:21,724 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-11 11:46:21,724 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-11 11:46:21,746 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_301/bin/server;C:/Program Files/Java/jre1.8.0_301/bin;C:/Program Files/Java/jre1.8.0_301/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\ArcSoft\Bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;E:\Softwares\spring-tool-suite-3.8.4.RELEASE-e4.6.3-win32-x86_64\sts-bundle\sts-3.8.4.RELEASE;;.]
+2021-10-11 11:46:22,274 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2021-10-11 11:46:22,274 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 6530 ms
+2021-10-11 11:46:22,797 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2021-10-11 11:46:22,819 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet webServlet mapped to [/h2-console/*]
+2021-10-11 11:46:22,823 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-11 11:46:22,824 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-11 11:46:22,824 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-11 11:46:22,825 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-11 11:46:23,019 INFO org.springframework.aop.framework.CglibAopProxy [restartedMain] Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2021-10-11 11:46:23,656 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-11 11:46:24,475 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-11 11:46:24,859 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:46:24,904 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-11 11:46:25,377 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.2.17.Final}
+2021-10-11 11:46:25,379 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-10-11 11:46:25,526 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-10-11 11:46:26,007 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-11 11:46:28,456 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.studentoffer.offer.entity.Offer (class must be instantiated by Interceptor)
+2021-10-11 11:46:28,896 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:46:31,855 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-10-11 11:46:31,892 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:46:31,892 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:46:32,012 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:46:32,015 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:46:33,891 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:46:35,968 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@28abcdf9: startup date [Mon Oct 11 11:46:15 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@56d96498
+2021-10-11 11:46:36,088 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-11 11:46:36,921 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/offer/{state}],methods=[GET]}" onto public java.lang.String com.studentoffer.offer.controller.OfferController.getOfferByState(java.lang.String)
+2021-10-11 11:46:36,932 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-11 11:46:36,935 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-11 11:46:37,159 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:46:37,160 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:46:37,814 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2021-10-11 11:46:38,541 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2021-10-11 11:46:38,544 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-10-11 11:46:38,562 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'refreshScope' has been autodetected for JMX exposure
+2021-10-11 11:46:38,569 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2021-10-11 11:46:38,570 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'environmentManager' has been autodetected for JMX exposure
+2021-10-11 11:46:38,574 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2021-10-11 11:46:38,596 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2021-10-11 11:46:38,623 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=28abcdf9,type=ConfigurationPropertiesRebinder]
+2021-10-11 11:46:38,640 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-10-11 11:46:38,663 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:46:39,001 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2021-10-11 11:46:39,025 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2021-10-11 11:46:39,033 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OfferApplication in 29.265 seconds (JVM running for 30.916)
+2021-10-11 11:46:40,442 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-2] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-10-11 11:46:40,443 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-2] FrameworkServlet 'dispatcherServlet': initialization started
+2021-10-11 11:46:40,497 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-2] FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2021-10-11 11:46:40,712 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2] with root cause
+javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:123)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1471)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:214)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:91)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:136)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:125)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:590)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy99.getOfferByState(Unknown Source)
+	at com.studentoffer.offer.service.OfferService.getOfferByState(OfferService.java:18)
+	at com.studentoffer.offer.controller.OfferController.getOfferByState(OfferController.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-10-11 11:49:45,003 INFO org.springframework.context.support.AbstractApplicationContext [Thread-3] Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@56d96498: startup date [Mon Oct 11 11:46:12 IST 2021]; root of context hierarchy
+2021-10-11 11:49:45,004 INFO org.springframework.context.support.AbstractApplicationContext [Thread-3] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@28abcdf9: startup date [Mon Oct 11 11:46:15 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@56d96498
+2021-10-11 11:49:45,038 INFO org.springframework.jmx.export.MBeanExporter [Thread-3] Unregistering JMX-exposed beans on shutdown
+2021-10-11 11:49:45,039 INFO org.springframework.jmx.support.MBeanRegistrationSupport [Thread-3] Unregistering JMX-exposed beans
+2021-10-11 11:49:45,043 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-3] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:49:45,049 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown initiated...
+2021-10-11 11:49:45,068 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown completed.
+2021-10-11 11:49:47,332 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@40905c23: startup date [Mon Oct 11 11:49:47 IST 2021]; root of context hierarchy
+2021-10-11 11:49:47,361 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$700d517b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:49:47,997 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1dc3fcb5: startup date [Mon Oct 11 11:49:47 IST 2021]; root of context hierarchy
+2021-10-11 11:49:48,213 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-11 11:49:48,219 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e18ced4: startup date [Mon Oct 11 11:49:48 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@40905c23
+2021-10-11 11:49:49,574 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ce2e8a71] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:49:50,169 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:49:50,177 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:49:50,220 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2021-10-11 11:49:50,283 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=56990123-f0d9-3063-929e-2af6514275d7
+2021-10-11 11:49:50,342 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53f34e7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:49:50,347 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$700d517b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:49:50,621 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2021-10-11 11:49:50,622 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:49:50,623 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-11 11:49:50,624 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-11 11:49:50,673 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2021-10-11 11:49:50,674 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 2455 ms
+2021-10-11 11:49:50,735 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2021-10-11 11:49:50,736 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet webServlet mapped to [/h2-console/*]
+2021-10-11 11:49:50,737 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-11 11:49:50,737 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-11 11:49:50,738 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-11 11:49:50,738 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-11 11:49:50,882 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-10-11 11:49:50,907 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-10-11 11:49:50,922 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:49:50,923 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-11 11:49:50,940 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-11 11:49:50,972 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.studentoffer.offer.entity.Offer (class must be instantiated by Interceptor)
+2021-10-11 11:49:51,079 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3eb3298'
+2021-10-11 11:49:51,080 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:49:51,252 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-10-11 11:49:51,254 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:49:51,254 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:49:51,299 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:49:51,490 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e18ced4: startup date [Mon Oct 11 11:49:48 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@40905c23
+2021-10-11 11:49:51,497 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-11 11:49:51,505 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/offer/{state}],methods=[GET]}" onto public java.lang.String com.studentoffer.offer.controller.OfferController.getOfferByState(java.lang.String)
+2021-10-11 11:49:51,508 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-11 11:49:51,509 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-11 11:49:51,539 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:49:51,541 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:49:51,779 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2021-10-11 11:49:52,567 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-11 11:49:52,604 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20bcac1c: startup date [Mon Oct 11 11:49:52 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1dc3fcb5
+2021-10-11 11:49:52,803 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2021-10-11 11:49:52,805 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-10-11 11:49:52,821 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'refreshScope' has been autodetected for JMX exposure
+2021-10-11 11:49:52,846 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2021-10-11 11:49:52,851 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'environmentManager' has been autodetected for JMX exposure
+2021-10-11 11:49:52,860 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2021-10-11 11:49:52,868 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2021-10-11 11:49:52,871 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=e18ced4,type=ConfigurationPropertiesRebinder]
+2021-10-11 11:49:52,876 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-10-11 11:49:52,935 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:49:52,940 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2021-10-11 11:49:52,974 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2021-10-11 11:49:52,979 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OfferApplication in 6.773 seconds (JVM running for 224.863)
+2021-10-11 11:49:53,031 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-10-11 11:49:54,739 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:49:54,741 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:49:54,825 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2021-10-11 11:49:55,224 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=56990123-f0d9-3063-929e-2af6514275d7
+2021-10-11 11:49:55,463 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2148774] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:49:55,531 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ce2e8a71] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:49:56,627 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2021-10-11 11:49:56,659 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:49:56,680 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-11 11:49:56,681 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-11 11:49:56,700 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_301/bin/server;C:/Program Files/Java/jre1.8.0_301/bin;C:/Program Files/Java/jre1.8.0_301/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\ArcSoft\Bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;E:\Softwares\spring-tool-suite-3.8.4.RELEASE-e4.6.3-win32-x86_64\sts-bundle\sts-3.8.4.RELEASE;;.]
+2021-10-11 11:49:56,963 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2021-10-11 11:49:56,964 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 4359 ms
+2021-10-11 11:49:57,301 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2021-10-11 11:49:57,304 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet webServlet mapped to [/h2-console/*]
+2021-10-11 11:49:57,309 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-11 11:49:57,314 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-11 11:49:57,315 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-11 11:49:57,315 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-11 11:49:57,454 INFO org.springframework.aop.framework.CglibAopProxy [restartedMain] Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2021-10-11 11:49:57,838 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-11 11:49:58,282 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-11 11:49:58,425 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:49:58,526 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-11 11:49:58,746 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.2.17.Final}
+2021-10-11 11:49:58,750 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-10-11 11:49:58,877 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-10-11 11:49:59,184 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-11 11:50:00,024 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.studentoffer.offer.entity.Offer (class must be instantiated by Interceptor)
+2021-10-11 11:50:00,391 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6ec73033'
+2021-10-11 11:50:00,396 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:50:00,981 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-10-11 11:50:00,987 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:50:00,987 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:50:00,996 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:50:00,997 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:50:01,241 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:50:01,712 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20bcac1c: startup date [Mon Oct 11 11:49:52 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1dc3fcb5
+2021-10-11 11:50:01,919 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-11 11:50:02,018 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/offer/{state}],methods=[GET]}" onto public java.lang.String com.studentoffer.offer.controller.OfferController.getOfferByState(java.lang.String)
+2021-10-11 11:50:02,028 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-11 11:50:02,029 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-11 11:50:02,118 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:50:02,119 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:50:02,663 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2021-10-11 11:50:03,585 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2021-10-11 11:50:03,587 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-10-11 11:50:03,598 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'refreshScope' has been autodetected for JMX exposure
+2021-10-11 11:50:03,601 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2021-10-11 11:50:03,602 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'environmentManager' has been autodetected for JMX exposure
+2021-10-11 11:50:03,606 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2021-10-11 11:50:03,627 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2021-10-11 11:50:03,643 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=20bcac1c,type=ConfigurationPropertiesRebinder]
+2021-10-11 11:50:03,660 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-10-11 11:50:03,688 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:50:03,707 ERROR org.apache.juli.logging.DirectJDKLog [restartedMain] Failed to start connector [Connector[HTTP/1.1-9191]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9191]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.studentoffer.offer.OfferApplication.main(OfferApplication.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+2021-10-11 11:50:03,715 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Pausing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:50:03,715 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-10-11 11:50:03,731 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2021-10-11 11:50:03,766 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:50:03,767 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Destroying ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:50:03,778 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-11 11:50:03,782 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9191 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9191, or configure this application to listen on another port.
+
+2021-10-11 11:50:03,784 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20bcac1c: startup date [Mon Oct 11 11:49:52 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1dc3fcb5
+2021-10-11 11:50:03,791 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Unregistering JMX-exposed beans on shutdown
+2021-10-11 11:50:03,792 INFO org.springframework.jmx.support.MBeanRegistrationSupport [restartedMain] Unregistering JMX-exposed beans
+2021-10-11 11:50:03,796 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:50:03,798 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2021-10-11 11:50:03,810 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2021-10-11 11:50:21,053 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(11)-127.0.0.1] Application shutdown requested.
+2021-10-11 11:50:21,054 INFO org.springframework.context.support.AbstractApplicationContext [RMI TCP Connection(11)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e18ced4: startup date [Mon Oct 11 11:49:48 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@40905c23
+2021-10-11 11:50:21,058 INFO org.springframework.jmx.export.MBeanExporter [RMI TCP Connection(11)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2021-10-11 11:50:21,058 INFO org.springframework.jmx.support.MBeanRegistrationSupport [RMI TCP Connection(11)-127.0.0.1] Unregistering JMX-exposed beans
+2021-10-11 11:50:21,061 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(11)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:50:21,063 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-2 - Shutdown initiated...
+2021-10-11 11:50:21,073 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-2 - Shutdown completed.
+2021-10-11 11:50:21,075 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Pausing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:50:21,382 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping service [Tomcat]
+2021-10-11 11:50:21,391 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:50:21,396 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Destroying ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:50:34,938 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@56ff5c78: startup date [Mon Oct 11 11:50:34 IST 2021]; root of context hierarchy
+2021-10-11 11:50:35,315 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$69b3ca90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:50:36,047 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-11 11:50:36,080 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@280b8d4e: startup date [Mon Oct 11 11:50:36 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@56ff5c78
+2021-10-11 11:50:37,231 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:50:37,233 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:50:37,315 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2021-10-11 11:50:37,601 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=56990123-f0d9-3063-929e-2af6514275d7
+2021-10-11 11:50:37,778 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d99c793] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:50:37,826 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$69b3ca90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:50:38,636 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2021-10-11 11:50:38,672 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:50:38,691 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-11 11:50:38,692 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-11 11:50:38,705 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_301/bin/server;C:/Program Files/Java/jre1.8.0_301/bin;C:/Program Files/Java/jre1.8.0_301/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\ArcSoft\Bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;E:\Softwares\spring-tool-suite-3.8.4.RELEASE-e4.6.3-win32-x86_64\sts-bundle\sts-3.8.4.RELEASE;;.]
+2021-10-11 11:50:38,969 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2021-10-11 11:50:38,969 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 2889 ms
+2021-10-11 11:50:39,261 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2021-10-11 11:50:39,264 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet webServlet mapped to [/h2-console/*]
+2021-10-11 11:50:39,269 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-11 11:50:39,270 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-11 11:50:39,270 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-11 11:50:39,271 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-11 11:50:39,381 INFO org.springframework.aop.framework.CglibAopProxy [restartedMain] Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2021-10-11 11:50:39,765 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-11 11:50:40,107 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-11 11:50:40,189 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:50:40,242 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-11 11:50:40,488 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.2.17.Final}
+2021-10-11 11:50:40,492 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-10-11 11:50:40,640 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-10-11 11:50:40,937 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-11 11:50:41,649 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.studentoffer.offer.entity.Offer (class must be instantiated by Interceptor)
+2021-10-11 11:50:41,919 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@42ccab3c'
+2021-10-11 11:50:41,924 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:50:42,587 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-10-11 11:50:42,596 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:50:42,597 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:50:42,609 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:50:42,610 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:50:42,816 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:50:43,265 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@280b8d4e: startup date [Mon Oct 11 11:50:36 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@56ff5c78
+2021-10-11 11:50:43,336 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-11 11:50:43,447 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/offer/{state}],methods=[GET]}" onto public java.lang.String com.studentoffer.offer.controller.OfferController.getOfferByState(java.lang.String)
+2021-10-11 11:50:43,451 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-11 11:50:43,452 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-11 11:50:43,538 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:50:43,539 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:50:44,078 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-11 11:50:44,754 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2021-10-11 11:50:44,757 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-10-11 11:50:44,770 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'refreshScope' has been autodetected for JMX exposure
+2021-10-11 11:50:44,772 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2021-10-11 11:50:44,773 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'environmentManager' has been autodetected for JMX exposure
+2021-10-11 11:50:44,778 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2021-10-11 11:50:44,798 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2021-10-11 11:50:44,816 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=280b8d4e,type=ConfigurationPropertiesRebinder]
+2021-10-11 11:50:44,831 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-10-11 11:50:44,884 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:50:45,267 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2021-10-11 11:50:45,289 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2021-10-11 11:50:45,295 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OfferApplication in 11.813 seconds (JVM running for 13.257)
+2021-10-11 11:52:16,321 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@d00ae25: startup date [Mon Oct 11 11:52:16 IST 2021]; root of context hierarchy
+2021-10-11 11:52:16,752 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1f754e70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:52:17,478 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-11 11:52:17,509 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ce55964: startup date [Mon Oct 11 11:52:17 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@d00ae25
+2021-10-11 11:52:18,655 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:52:18,657 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:52:18,743 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2021-10-11 11:52:19,050 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=56990123-f0d9-3063-929e-2af6514275d7
+2021-10-11 11:52:19,242 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$35b4b73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:52:19,296 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1f754e70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:52:20,051 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2021-10-11 11:52:20,082 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:52:20,097 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-11 11:52:20,098 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-11 11:52:20,112 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_301/bin/server;C:/Program Files/Java/jre1.8.0_301/bin;C:/Program Files/Java/jre1.8.0_301/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\ArcSoft\Bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;E:\Softwares\spring-tool-suite-3.8.4.RELEASE-e4.6.3-win32-x86_64\sts-bundle\sts-3.8.4.RELEASE;;.]
+2021-10-11 11:52:20,373 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2021-10-11 11:52:20,374 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 2865 ms
+2021-10-11 11:52:20,640 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2021-10-11 11:52:20,643 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet webServlet mapped to [/h2-console/*]
+2021-10-11 11:52:20,648 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-11 11:52:20,649 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-11 11:52:20,649 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-11 11:52:20,650 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-11 11:52:20,740 INFO org.springframework.aop.framework.CglibAopProxy [restartedMain] Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2021-10-11 11:52:21,113 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-11 11:52:21,496 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-11 11:52:21,583 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:52:21,643 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-11 11:52:21,843 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.2.17.Final}
+2021-10-11 11:52:21,845 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-10-11 11:52:21,910 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-10-11 11:52:22,143 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-11 11:52:22,697 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.studentoffer.offer.entity.Offer (class must be instantiated by Interceptor)
+2021-10-11 11:52:22,923 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7fa8f2e4'
+2021-10-11 11:52:22,927 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:52:23,600 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-10-11 11:52:23,609 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:52:23,609 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:52:23,622 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:52:23,622 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:52:23,823 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:52:24,304 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ce55964: startup date [Mon Oct 11 11:52:17 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@d00ae25
+2021-10-11 11:52:24,391 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-11 11:52:24,481 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/offer/{state}],methods=[GET]}" onto public java.lang.String com.studentoffer.offer.controller.OfferController.getOfferByState(java.lang.String)
+2021-10-11 11:52:24,500 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-11 11:52:24,501 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-11 11:52:24,642 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:52:24,649 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:52:25,128 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2021-10-11 11:52:25,782 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2021-10-11 11:52:25,786 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-10-11 11:52:25,796 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'refreshScope' has been autodetected for JMX exposure
+2021-10-11 11:52:25,798 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2021-10-11 11:52:25,799 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'environmentManager' has been autodetected for JMX exposure
+2021-10-11 11:52:25,803 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2021-10-11 11:52:25,820 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2021-10-11 11:52:25,835 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5ce55964,type=ConfigurationPropertiesRebinder]
+2021-10-11 11:52:25,843 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-10-11 11:52:25,875 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:52:25,885 ERROR org.apache.juli.logging.DirectJDKLog [restartedMain] Failed to start connector [Connector[HTTP/1.1-9191]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9191]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.studentoffer.offer.OfferApplication.main(OfferApplication.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+2021-10-11 11:52:25,893 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Pausing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:52:25,895 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-10-11 11:52:25,906 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2021-10-11 11:52:25,906 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:52:25,907 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Destroying ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:52:25,916 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-11 11:52:25,919 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9191 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9191, or configure this application to listen on another port.
+
+2021-10-11 11:52:25,921 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ce55964: startup date [Mon Oct 11 11:52:17 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@d00ae25
+2021-10-11 11:52:25,926 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Unregistering JMX-exposed beans on shutdown
+2021-10-11 11:52:25,927 INFO org.springframework.jmx.support.MBeanRegistrationSupport [restartedMain] Unregistering JMX-exposed beans
+2021-10-11 11:52:25,931 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:52:25,933 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2021-10-11 11:52:25,947 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2021-10-11 11:52:37,936 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(9)-127.0.0.1] Application shutdown requested.
+2021-10-11 11:52:37,937 INFO org.springframework.context.support.AbstractApplicationContext [RMI TCP Connection(9)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@280b8d4e: startup date [Mon Oct 11 11:50:36 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@56ff5c78
+2021-10-11 11:52:37,944 INFO org.springframework.jmx.export.MBeanExporter [RMI TCP Connection(9)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2021-10-11 11:52:37,945 INFO org.springframework.jmx.support.MBeanRegistrationSupport [RMI TCP Connection(9)-127.0.0.1] Unregistering JMX-exposed beans
+2021-10-11 11:52:37,949 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(9)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:52:37,953 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-10-11 11:52:37,969 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-10-11 11:52:37,971 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(9)-127.0.0.1] Pausing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:52:38,466 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(9)-127.0.0.1] Stopping service [Tomcat]
+2021-10-11 11:52:38,503 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(9)-127.0.0.1] Stopping ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:52:38,517 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(9)-127.0.0.1] Destroying ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:52:55,234 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@67178403: startup date [Mon Oct 11 11:52:55 IST 2021]; root of context hierarchy
+2021-10-11 11:52:55,640 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c9c67bc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:52:56,559 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-11 11:52:56,591 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@bb2f032: startup date [Mon Oct 11 11:52:56 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@67178403
+2021-10-11 11:52:58,401 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:52:58,403 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:52:58,498 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2021-10-11 11:52:58,878 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=56990123-f0d9-3063-929e-2af6514275d7
+2021-10-11 11:52:59,567 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$adac78c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:52:59,654 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c9c67bc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:53:00,665 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2021-10-11 11:53:00,699 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:53:00,722 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-11 11:53:00,723 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-11 11:53:00,744 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_301/bin/server;C:/Program Files/Java/jre1.8.0_301/bin;C:/Program Files/Java/jre1.8.0_301/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\ArcSoft\Bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;E:\Softwares\spring-tool-suite-3.8.4.RELEASE-e4.6.3-win32-x86_64\sts-bundle\sts-3.8.4.RELEASE;;.]
+2021-10-11 11:53:01,166 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2021-10-11 11:53:01,166 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 4575 ms
+2021-10-11 11:53:01,472 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2021-10-11 11:53:01,475 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet webServlet mapped to [/h2-console/*]
+2021-10-11 11:53:01,480 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-11 11:53:01,481 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-11 11:53:01,482 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-11 11:53:01,482 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-11 11:53:01,601 INFO org.springframework.aop.framework.CglibAopProxy [restartedMain] Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2021-10-11 11:53:01,977 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-11 11:53:02,444 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-11 11:53:02,545 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:53:02,607 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-11 11:53:02,835 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.2.17.Final}
+2021-10-11 11:53:02,838 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-10-11 11:53:02,962 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-10-11 11:53:03,274 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-11 11:53:04,047 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.studentoffer.offer.entity.Offer (class must be instantiated by Interceptor)
+2021-10-11 11:53:04,330 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3e512ba2'
+2021-10-11 11:53:04,334 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:53:04,893 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-10-11 11:53:04,899 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:53:04,900 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:53:04,909 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:53:04,910 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:53:05,142 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:53:05,609 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@bb2f032: startup date [Mon Oct 11 11:52:56 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@67178403
+2021-10-11 11:53:05,678 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-11 11:53:05,748 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/offer/{state}],methods=[GET]}" onto public java.lang.String com.studentoffer.offer.controller.OfferController.getOfferByState(java.lang.String)
+2021-10-11 11:53:05,751 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-11 11:53:05,752 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-11 11:53:05,834 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:53:05,835 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:53:06,404 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-11 11:53:07,098 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2021-10-11 11:53:07,100 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-10-11 11:53:07,110 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'refreshScope' has been autodetected for JMX exposure
+2021-10-11 11:53:07,113 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2021-10-11 11:53:07,114 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'environmentManager' has been autodetected for JMX exposure
+2021-10-11 11:53:07,118 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2021-10-11 11:53:07,135 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2021-10-11 11:53:07,149 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=bb2f032,type=ConfigurationPropertiesRebinder]
+2021-10-11 11:53:07,161 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-10-11 11:53:07,194 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:53:07,216 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2021-10-11 11:53:07,271 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2021-10-11 11:53:07,624 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OfferApplication in 13.965 seconds (JVM running for 15.68)
+2021-10-11 11:53:45,573 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-9] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-10-11 11:53:45,574 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-9] FrameworkServlet 'dispatcherServlet': initialization started
+2021-10-11 11:53:45,615 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-9] FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2021-10-11 11:55:33,159 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2021-10-11 11:55:33,160 INFO org.springframework.context.support.AbstractApplicationContext [RMI TCP Connection(10)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@bb2f032: startup date [Mon Oct 11 11:52:56 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@67178403
+2021-10-11 11:55:33,166 INFO org.springframework.jmx.export.MBeanExporter [RMI TCP Connection(10)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2021-10-11 11:55:33,167 INFO org.springframework.jmx.support.MBeanRegistrationSupport [RMI TCP Connection(10)-127.0.0.1] Unregistering JMX-exposed beans
+2021-10-11 11:55:33,171 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(10)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:55:33,175 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-10-11 11:55:33,186 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-10-11 11:55:33,188 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Pausing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:55:33,500 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping service [Tomcat]
+2021-10-11 11:55:33,507 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-2] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-10-11 11:55:33,516 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:55:33,523 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:56:06,925 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2a579f12: startup date [Mon Oct 11 11:56:06 IST 2021]; root of context hierarchy
+2021-10-11 11:56:07,299 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f701e5a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:56:08,025 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-11 11:56:08,058 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f4b53f6: startup date [Mon Oct 11 11:56:08 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2a579f12
+2021-10-11 11:56:09,201 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:56:09,203 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 11:56:09,299 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2021-10-11 11:56:09,556 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=56990123-f0d9-3063-929e-2af6514275d7
+2021-10-11 11:56:09,748 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dae7e2a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:56:09,802 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f701e5a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 11:56:10,558 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2021-10-11 11:56:10,587 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:56:10,603 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-11 11:56:10,604 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-11 11:56:10,622 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_301/bin/server;C:/Program Files/Java/jre1.8.0_301/bin;C:/Program Files/Java/jre1.8.0_301/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\ArcSoft\Bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;E:\Softwares\spring-tool-suite-3.8.4.RELEASE-e4.6.3-win32-x86_64\sts-bundle\sts-3.8.4.RELEASE;;.]
+2021-10-11 11:56:10,901 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2021-10-11 11:56:10,902 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 2844 ms
+2021-10-11 11:56:11,182 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2021-10-11 11:56:11,185 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet webServlet mapped to [/h2-console/*]
+2021-10-11 11:56:11,190 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-11 11:56:11,191 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-11 11:56:11,191 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-11 11:56:11,192 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-11 11:56:11,303 INFO org.springframework.aop.framework.CglibAopProxy [restartedMain] Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2021-10-11 11:56:11,688 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-11 11:56:12,013 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-11 11:56:12,113 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:56:12,150 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-11 11:56:12,372 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.2.17.Final}
+2021-10-11 11:56:12,375 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-10-11 11:56:12,450 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-10-11 11:56:12,660 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-11 11:56:13,217 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.studentoffer.offer.entity.Offer (class must be instantiated by Interceptor)
+2021-10-11 11:56:13,446 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3dc7d35c'
+2021-10-11 11:56:13,450 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 11:56:13,977 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-10-11 11:56:13,983 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:56:13,984 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:56:13,992 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 11:56:13,993 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 11:56:14,189 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:56:14,625 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f4b53f6: startup date [Mon Oct 11 11:56:08 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2a579f12
+2021-10-11 11:56:14,762 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-11 11:56:14,850 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/offer/{state}],methods=[GET]}" onto public java.lang.String com.studentoffer.offer.controller.OfferController.getOfferByState(java.lang.String)
+2021-10-11 11:56:14,860 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-11 11:56:14,862 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-11 11:56:14,913 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:56:14,913 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 11:56:15,409 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-11 11:56:16,261 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2021-10-11 11:56:16,263 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-10-11 11:56:16,274 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'refreshScope' has been autodetected for JMX exposure
+2021-10-11 11:56:16,276 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2021-10-11 11:56:16,277 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'environmentManager' has been autodetected for JMX exposure
+2021-10-11 11:56:16,281 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2021-10-11 11:56:16,296 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2021-10-11 11:56:16,310 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7f4b53f6,type=ConfigurationPropertiesRebinder]
+2021-10-11 11:56:16,318 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-10-11 11:56:16,350 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2021-10-11 11:56:16,370 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2021-10-11 11:56:16,401 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2021-10-11 11:56:16,409 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OfferApplication in 11.067 seconds (JVM running for 12.644)
+2021-10-11 11:58:07,721 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-10] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-10-11 11:58:07,722 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-10] FrameworkServlet 'dispatcherServlet': initialization started
+2021-10-11 11:58:07,796 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-10] FrameworkServlet 'dispatcherServlet': initialization completed in 74 ms
+2021-10-11 13:09:51,540 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(81)-127.0.0.1] Application shutdown requested.
+2021-10-11 13:09:51,555 INFO org.springframework.context.support.AbstractApplicationContext [RMI TCP Connection(81)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f4b53f6: startup date [Mon Oct 11 11:56:08 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2a579f12
+2021-10-11 13:09:51,623 INFO org.springframework.jmx.export.MBeanExporter [RMI TCP Connection(81)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2021-10-11 13:09:51,627 INFO org.springframework.jmx.support.MBeanRegistrationSupport [RMI TCP Connection(81)-127.0.0.1] Unregistering JMX-exposed beans
+2021-10-11 13:09:51,644 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(81)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 13:09:51,676 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(81)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-10-11 13:09:51,682 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(81)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-10-11 13:09:51,685 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(81)-127.0.0.1] Pausing ProtocolHandler ["http-nio-9191"]
+2021-10-11 13:09:51,979 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(81)-127.0.0.1] Stopping service [Tomcat]
+2021-10-11 13:09:51,991 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-2] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-10-11 13:09:52,016 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(81)-127.0.0.1] Stopping ProtocolHandler ["http-nio-9191"]
+2021-10-11 13:09:52,031 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(81)-127.0.0.1] Destroying ProtocolHandler ["http-nio-9191"]
+2021-10-11 13:11:23,827 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@63cf18a9: startup date [Mon Oct 11 13:11:23 IST 2021]; root of context hierarchy
+2021-10-11 13:11:24,206 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1d4e1b0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 13:11:25,094 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-11 13:11:25,124 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ec923fb: startup date [Mon Oct 11 13:11:25 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63cf18a9
+2021-10-11 13:11:26,287 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 13:11:26,289 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'feignContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.feign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/feign/FeignAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.openfeign.FeignAutoConfiguration; factoryMethodName=feignContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration.class]]
+2021-10-11 13:11:26,395 INFO org.springframework.beans.factory.support.DefaultListableBeanFactory [restartedMain] Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2021-10-11 13:11:26,655 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=56990123-f0d9-3063-929e-2af6514275d7
+2021-10-11 13:11:26,881 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$134180d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 13:11:26,999 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1d4e1b0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-11 13:11:27,801 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9191 (http)
+2021-10-11 13:11:27,833 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9191"]
+2021-10-11 13:11:27,855 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-11 13:11:27,856 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-11 13:11:27,877 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_301/bin/server;C:/Program Files/Java/jre1.8.0_301/bin;C:/Program Files/Java/jre1.8.0_301/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\ArcSoft\Bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;E:\Softwares\spring-tool-suite-3.8.4.RELEASE-e4.6.3-win32-x86_64\sts-bundle\sts-3.8.4.RELEASE;;.]
+2021-10-11 13:11:28,136 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2021-10-11 13:11:28,136 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 3012 ms
+2021-10-11 13:11:28,401 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2021-10-11 13:11:28,404 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet webServlet mapped to [/h2-console/*]
+2021-10-11 13:11:28,408 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-11 13:11:28,409 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-11 13:11:28,409 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-11 13:11:28,410 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-11 13:11:28,527 INFO org.springframework.aop.framework.CglibAopProxy [restartedMain] Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2021-10-11 13:11:28,898 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-11 13:11:29,303 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-11 13:11:29,396 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-10-11 13:11:29,443 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-11 13:11:29,672 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.2.17.Final}
+2021-10-11 13:11:29,674 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2021-10-11 13:11:29,728 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-10-11 13:11:29,923 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-11 13:11:30,516 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.studentoffer.offer.entity.Offer (class must be instantiated by Interceptor)
+2021-10-11 13:11:30,762 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1567d224'
+2021-10-11 13:11:30,766 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-11 13:11:31,295 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-10-11 13:11:31,302 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 13:11:31,303 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 13:11:31,314 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-11 13:11:31,314 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-11 13:11:31,558 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 13:11:32,010 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ec923fb: startup date [Mon Oct 11 13:11:25 IST 2021]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63cf18a9
+2021-10-11 13:11:32,074 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-11 13:11:32,147 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/offer/{state}],methods=[GET]}" onto public java.lang.String com.studentoffer.offer.controller.OfferController.getOfferByState(java.lang.String)
+2021-10-11 13:11:32,151 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-11 13:11:32,152 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-11 13:11:32,249 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 13:11:32,250 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-11 13:11:32,752 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-11 13:11:33,453 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2021-10-11 13:11:33,455 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-10-11 13:11:33,466 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'refreshScope' has been autodetected for JMX exposure
+2021-10-11 13:11:33,467 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2021-10-11 13:11:33,469 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Bean with name 'environmentManager' has been autodetected for JMX exposure
+2021-10-11 13:11:33,472 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2021-10-11 13:11:33,489 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2021-10-11 13:11:33,503 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6ec923fb,type=ConfigurationPropertiesRebinder]
+2021-10-11 13:11:33,512 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-10-11 13:11:33,559 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9191"]
+2021-10-11 13:11:33,582 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2021-10-11 13:11:33,612 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9191 (http) with context path ''
+2021-10-11 13:11:33,644 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started OfferApplication in 11.314 seconds (JVM running for 12.802)
+2021-10-11 13:13:58,969 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9191-exec-10] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-10-11 13:13:58,971 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-10] FrameworkServlet 'dispatcherServlet': initialization started
+2021-10-11 13:13:59,476 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9191-exec-10] FrameworkServlet 'dispatcherServlet': initialization completed in 503 ms
