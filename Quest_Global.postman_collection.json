@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "20bf4983-9066-4166-8005-09dd680130b9",
+		"name": "Quest_Global",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9191/getOfferByState",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studClass\": \"Btech\",\r\n    \"email\": \"Test@test.com\",\r\n    \"name\": \"Anukul\",\r\n    \"addresses\": [\r\n        {\r\n            \"house_number\": 201,\r\n            \"state\": \"MP\",\r\n            \"counrty\": \"India\"            \r\n        },\r\n           {\r\n            \"house_number\": 782,\r\n            \"state\": \"XP\",\r\n            \"counrty\": \"Windows\"            \r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/offer/MP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"offer",
+						"MP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9192/findStudentById/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9192/findStudentById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"findStudentById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9192/getAllStudentsByClass/Btech",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9192/getAllStudents/Btech",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"getAllStudents",
+						"Btech"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/getAllStudents",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studClass\": 1,\r\n    \"email\": 5,\r\n    \"name\": \"Demo\",\r\n    \"addresses\": [\r\n        {\r\n            \"house_number\": 1,\r\n            \"state\": \"MP\",\r\n            \"counrty\": \"India\"            \r\n        },\r\n           {\r\n            \"house_number\": 2,\r\n            \"state\": \"TP\",\r\n            \"counrty\": \"India\"            \r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9192/getAllStudents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"getAllStudents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/registerStudent",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studClass\": 1,\r\n    \"email\": 5,\r\n    \"name\": \"Naveen\",\r\n    \"addresses\": [\r\n        {\r\n            \"house_number\": 1,\r\n            \"state\": \"UP\",\r\n            \"counrty\": \"India\"            \r\n        },\r\n           {\r\n            \"house_number\": 2,\r\n            \"state\": \"UP\",\r\n            \"counrty\": \"India\"            \r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9192/registerStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"registerStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/removeStudent",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9192/removeStudent/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"removeStudent",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/updateStudent",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studClass\": 1,\r\n    \"email\": \"Update@ymail.com\",\r\n    \"name\": \"Naveen\",\r\n    \"studId\":\"4\",\r\n    \"addresses\": [\r\n        {\r\n            \"house_number\": 1,\r\n            \"state\": \"UP\",\r\n            \"counrty\": \"India\"            \r\n        },\r\n           {\r\n            \"house_number\": 2,\r\n            \"state\": \"UP\",\r\n            \"counrty\": \"India\"            \r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9192/updateStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"updateStudent"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
