@@ -20,6 +20,8 @@ public class StudentService {
 	StudentRepository studentRepository;
 	static final String URL_OFFER = "http://localhost:9191/offer/";
 	
+	@Autowired
+	RestTemplate restTemplate ;
 	public Student registerStudent(Student student){
 		return studentRepository.save(student);
 	}
@@ -29,9 +31,7 @@ public class StudentService {
 		return studentRepository.saveAll(students);
 	}
 	 
-	
 	public List<StudentReponse> getAllStudents(){
-		RestTemplate restTemplate = new RestTemplate();
 		List<AddressResponse> addressResponses =new ArrayList<>();
 		List<Student> studentsList = studentRepository.findAll();
 		List<StudentReponse> studentReponses = new ArrayList<>();
@@ -44,8 +44,8 @@ public class StudentService {
 				addressResponse.setCounrty(address.getCounrty());
 				addressResponse.setHouse_number(address.getHouse_number());
 				addressResponse.setState(address.getState());
-				System.out.println(address.getState());
-				addressResponse.setOffer(restTemplate.getForObject(URL_OFFER+address.getState(), String.class));
+				String offer = restTemplate.getForObject(URL_OFFER+address.getState(), String.class);
+				addressResponse.setOffer(offer == null || offer.equals("")? "No Offer Available": offer);
 				addressResponses.add(addressResponse);
 			}
 			
@@ -61,15 +61,55 @@ public class StudentService {
 	
 	public StudentReponse findStudentById(Integer id){
 		Student student = studentRepository.findById(id).orElse(null);
+		List<AddressResponse> addressResponses =new ArrayList<>();
 		List<Address>addresses = new ArrayList<>();
 		StudentReponse studentReponse = new StudentReponse();
-		
-		return studentRepository.findById(id).orElse(null);
+		studentReponse.setEmail(student.getEmail());
+		studentReponse.setName(student.getName());
+		studentReponse.setStudClass(student.getStudClass());
+		studentReponse.setStudId(student.getStudId());
+		addresses = (List<Address>) student.getAddresses();
+		for (Address address : addresses) {
+			AddressResponse addressResponse = new AddressResponse();
+			addressResponse.setAddId(address.getAddId());
+			addressResponse.setCounrty(address.getCounrty());
+			addressResponse.setHouse_number(address.getHouse_number());
+			addressResponse.setState(address.getState());
+			String offer = restTemplate.getForObject(URL_OFFER+address.getState(), String.class);
+			addressResponse.setOffer(offer == null || offer.equals("")? "No Offer Available": offer);
+			addressResponses.add(addressResponse);
+		}
+		studentReponse.setAddresses(addressResponses);
+		return studentReponse;
 	}
 	
-	public List<Student> getAllStudentsByClass(String className){
-		System.out.println("Class name is "+className);
-		return studentRepository.findByClassName(className);
+	public List<StudentReponse> getAllStudentsByClass(String className){
+		List<AddressResponse> addressResponses =new ArrayList<>();
+		List<Student> studentsList = studentRepository.findByClassName(className);
+		List<StudentReponse> studentReponses = new ArrayList<>();
+		for (Student student : studentsList) {
+			StudentReponse studentReponse =  new StudentReponse();
+			List<Address> addresses = (List<Address>) student.getAddresses();
+			for (Address address : addresses) {
+				AddressResponse addressResponse = new AddressResponse();
+				addressResponse.setAddId(address.getAddId());
+				addressResponse.setCounrty(address.getCounrty());
+				addressResponse.setHouse_number(address.getHouse_number());
+				addressResponse.setState(address.getState());
+				String offer = restTemplate.getForObject(URL_OFFER+address.getState(), String.class);
+				addressResponse.setOffer(offer == null || offer.equals("")? "No Offer Available": offer);
+				addressResponses.add(addressResponse);
+			}
+			
+			studentReponse.setAddresses(addressResponses);
+			studentReponse.setEmail(student.getEmail());
+			studentReponse.setName(student.getName());
+			studentReponse.setStudClass(student.getStudClass());
+			studentReponse.setStudId(student.getStudId());
+			studentReponses.add(studentReponse);
+		
+	}
+		return studentReponses;
 	}
 	
 	public String removeStudent(Integer id){
